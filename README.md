@@ -9,7 +9,7 @@ Python module for writing GitHub Actions.
 
 ```bash
 # Get the repo
-$ git clone
+$ git clone https://github.com/boschglobal/action.toolkit.git
 $ cd action.toolkit
 
 # Build
