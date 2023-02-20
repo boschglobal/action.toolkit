@@ -1,2 +1,33 @@
-# action.toolkit
-Python modules for writing GitHub Actions.
+# GitHub Action Python Toolkit
+
+Python module for writing GitHub Actions.
+
+
+## Usage
+
+### Build
+
+```bash
+# Get the repo
+$ git clone
+$ cd action.toolkit
+
+# Build
+$ make
+
+# Test
+$ pip install -r requirements.txt
+$ make install
+$ make test
+```
+
+
+## Contribute
+
+Please refer to the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+
+
+## License
+
+GitHub Action Python Toolkit is open-sourced under the Apache-2.0 license.
+See the [LICENSE](LICENSE) and [NOTICE](./NOTICE) files for details.

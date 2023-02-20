@@ -1,0 +1,17 @@
+---
+changelog:
+  exclude:
+    labels:
+      - documentation
+      - oss
+      - roadmap
+      - testcase
+    authors: []
+  categories:
+    - title: Features
+      labels:
+        - enhancement
+    - title: Other Changes
+      labels:
+        - bug
+        - refactor
