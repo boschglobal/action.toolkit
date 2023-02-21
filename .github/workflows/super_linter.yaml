@@ -11,7 +11,7 @@ on:  # yamllint disable-line rule:truthy
 jobs:
   build:
     name: Lint Code Base
-    runs-on: [ubuntu]
+    runs-on: [ubuntu-latest]
     steps:
       - name: Get Actions user id
         id: get_uid
