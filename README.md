@@ -1,5 +1,9 @@
 # GitHub Action Python Toolkit
 
+[![CI](https://github.com/boschglobal/action.toolkit/actions/workflows/ci.yaml/badge.svg)](https://github.com/boschglobal/action.toolkit/actions/workflows/ci.yaml)
+[![Super Linter](https://github.com/boschglobal/action.toolkit/actions/workflows/super_linter.yaml/badge.svg)](https://github.com/boschglobal/action.toolkit/actions/workflows/super_linter.yaml)
+![GitHub](https://img.shields.io/github/license/boschglobal/action.toolkit)
+
 Python module for writing GitHub Actions.
 
 

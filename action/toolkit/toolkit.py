@@ -146,9 +146,10 @@ def parse_arguments(action_spec: ActionSpec) -> Tuple[Dict[str, str], bool]:
         Indicates if any required arguments were missing.
     """
     # Parse the arguments from the "action.yaml" file.
-    ArgSpec = namedtuple('ArgSpec',
-            ['name', 'default', 'help', 'required'], 
-            defaults=[False])
+    ArgSpec = namedtuple(
+        'ArgSpec',
+        ['name', 'default', 'help', 'required'],
+        defaults=[False])
     arguments = list()
     with open(action_spec.filename) as f:
         y = yaml.load(f.read(), Loader=yaml.SafeLoader)
