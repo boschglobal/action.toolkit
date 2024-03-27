@@ -224,13 +224,12 @@ def action_main(action_spec: ActionSpec) -> Dict[str, Any]:
     if action_spec.do_action:
         outputs = action_spec.do_action(args)
         # Print the outputs (which get picked up by GitHub Action Runners).
-        with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
-            for name, result in outputs.items():
-                print(f'{name}={result}', file=fh)
+        if 'GITHUB_OUTPUT' in os.environ:
+            with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+                for name, result in outputs.items():
+                    print(f'{name}={result}', file=fh)
         # Unit Test Support
-        #  GitHub will intercept STDOUT and "capture" any lines starting with
-        #  '::'. Therefore, to support unit testing, print the results a second
-        #  time without the '::'' prefix.
+        #  print the results a second time directly to console.
         for name, result in outputs.items():
             print(f'set-output name={name}::{result}')
         return outputs
