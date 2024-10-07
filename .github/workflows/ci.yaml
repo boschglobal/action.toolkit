@@ -51,7 +51,7 @@ jobs:
           make install
           make test
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: dist_dir
           path: |
