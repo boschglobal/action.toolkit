@@ -1,12 +1,9 @@
 ---
 name: Super Linter
 on:  # yamllint disable-line rule:truthy
-  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
-    types: [assigned, opened, edited, synchronize, reopened]
-  pull_request_target:
     types: [assigned, opened, edited, synchronize, reopened]
 jobs:
   build:
